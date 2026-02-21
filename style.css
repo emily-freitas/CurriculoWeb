@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid #3498db;
+}
+
+.info h1 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.objective {
+    text-align: center;
+    margin: 30px 0;
+    font-style: italic;
+}
+
+.content-section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #3498db;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #e1f5fe;
+    color: #0277bd;
+    padding: 8px 18px; 
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.85em;
+    transition: all 0.3s ease; 
+    border: 1px solid transparent;
+}
+
+.skill-tag:hover {
+    background: #0277bd;
+    color: white;
+    transform: translateY(-3px); 
+    cursor: default;
+}
+
+.job h3 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.job p em {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.job ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Estilo do Botão */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: #2980b9;
+}
+
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background-color: #16213e;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #4db8ff;
+}
+
+body.dark-mode .skill-tag {
+    background: #0f3460;
+    color: #4db8ff;
+}
+
+body.dark-mode a {
+    color: #4db8ff;
+}
+
+body.dark-mode hr {
+    border-color: #0f3460;
+}
